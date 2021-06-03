@@ -40,16 +40,16 @@ spec:
             - name: CLIENT_SECRET
               valueFrom:
                 secretKeyRef:
-                  name: lumen-auto-refresh
+                  name: lumen-automatic-updates
                   key: auth0.client_secret
             - name: AUTH0_USER
               valueFrom:
                 secretKeyRef:
-                  name: lumen-auto-refresh
+                  name: lumen-automatic-updates
                   key: user
             - name: AUTH0_PWD
               valueFrom:
                 secretKeyRef:
-                  name: lumen-auto-refresh
+                  name: lumen-automatic-updates
                   key: password
           restartPolicy: Never
