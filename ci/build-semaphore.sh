@@ -12,6 +12,6 @@ if [ -z "$CI_COMMIT" ]; then
 fi
 
 log Creating Production image
-docker build --rm=false -t "eu.gcr.io/${PROJECT_NAME}/akvo-lumen-automatic-updates:${CI_COMMIT}" .
+docker build --rm=false -t "eu.gcr.io/${PROJECT_NAME}/akvo-lumen-automatic-updates-${CI_BRANCH}:${CI_COMMIT}" .
 
 log Done
