@@ -1,1 +1,11 @@
-# lumen automatic updates
+* lumen automatic updates
+
+
+To deploy a new automatic update, create a new branch starting on main, adapt following values on update.py
+<LUMEN_DATASET_TITLE>
+<LUMEN_DATASET_ID>
+<LUMEN_INSTANCE>
+
+Ensure that email account is authorized to access the lumen data
+
+push to github
