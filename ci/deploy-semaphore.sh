@@ -37,6 +37,6 @@ gcloud container clusters get-credentials production
 log Pushing images
 gcloud auth configure-docker
 docker push "eu.gcr.io/${PROJECT_NAME}/akvo-lumen-automatic-updates-${CI_BRANCH}:${CI_COMMIT}"
-sed -e "s/\${CI_COMMIT}/$CI_COMMIT/g" ci/k8s/cronjob.yaml.template > cronjob.yaml.donotcommit
+sed -e "s/\${CI_COMMIT}/$CI_COMMIT/g;s/\${CI_BRANCH}/$CI_BRANCH/g" ci/k8s/cronjob.yaml.template > cronjob.yaml.donotcommit
 
 kubectl apply -f cronjob.yaml.donotcommit
