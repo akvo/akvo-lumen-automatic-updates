@@ -12,7 +12,6 @@ if [ -z "$CI_COMMIT" ]; then
 fi
 
 log Creating Production image
-cd lumen-datasets-periodic-updates
 docker build --rm=false -t "eu.gcr.io/${PROJECT_NAME}/akvo-lumen-automatic-updates:${CI_COMMIT}" .
 
 log Done
