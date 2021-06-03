@@ -1,11 +1,12 @@
 * lumen automatic updates
 
+This repo is intended to set up k8s scheduled jobs to update lumen datasets.
+Each lumen instance that we want to update should have its own job, which means that should have a branch in this repo with the same name (eg: unicef branch https://github.com/akvo/akvo-lumen-automatic-updates/tree/unicef to update https://unicef.akvolumen.org/ lumen instance).
 
-To deploy a new automatic update, create a new branch starting on main, adapt following values on update.py
-<LUMEN_DATASET_TITLE>
-<LUMEN_DATASET_ID>
-<LUMEN_INSTANCE>
+These are the steps to follow to add a new lumen dataset(-uuid) to update
 
-Ensure that email account is authorized to access the lumen data
 
-push to github
+1- Search for the branch/lumen-instance-name you want to update, if not exists create a new one starting on "main" and using the lumen-instance-name as branch name
+2- Update branch values according your needs. eg: unicef changes https://github.com/akvo/akvo-lumen-automatic-updates/compare/unicef#diff-3db03b056e588432b22814fac93c11d44c8a4d8d958713cd2bf70b1d1d0ab48d
+3- Ensure that email account lumen-automatic-updates-bot@akvo.org is authorized to access the lumen data and flow data
+4- Push branch to this repo and wait for the successful build on semaphore https://akvo.semaphoreci.com/projects/akvo-lumen-automatic-updates
