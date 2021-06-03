@@ -3,7 +3,7 @@ import time
 import sys
 import os
 
-base_url = 'https://<LUMEN_INSTANCE>.akvolumen.org'
+base_url = 'https://unicef.akvolumen.org'
 dataset_api_url = base_url + '/api/datasets/{}'
 update_api_url = dataset_api_url + '/update'
 job_status_url = base_url + '/api/job_executions/dataset/{}'
@@ -23,7 +23,7 @@ token_data = {
 
 # Form - dataset mapping
 table_dataset = {
-    '<LUMEN_DATASET_TITLE>': '<LUMEN_DATASET_ID>',
+    'ds1': '60b67338-ca0b-4d2f-9209-44bdcc244a9c',
 }
 
 
@@ -38,8 +38,8 @@ def get_token():
 def headers(token):
     return {
         'Authorization': 'Bearer ' + token,
-        'Host': '<LUMEN_INSTANCE>.akvolumen.org',
-        'Origin': 'https://<LUMEN_INSTANCE>.akvolumen.org',
+        'Host': 'unicef.akvolumen.org',
+        'Origin': 'https://unicef.akvolumen.org',
         'Content-Type': 'application/json',
     }
 
