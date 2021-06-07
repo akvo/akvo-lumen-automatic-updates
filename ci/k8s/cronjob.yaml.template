@@ -15,7 +15,7 @@ spec:
         jobowner: tech-consultancy
     spec:
       backoffLimit: 6 # default
-      activeDeadlineSeconds: 900 # Fail job if it takes more than 15 mins
+      activeDeadlineSeconds: 3600 # Fail job if it takes more than 60 mins
       template:
         metadata:
           labels:
