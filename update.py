@@ -28,7 +28,7 @@ table_dataset = {
     'f4':'60b7c400-7095-41e4-ad6c-fc898f880948',
     'f6':'60a63134-0fbf-4209-b185-e5071b37cf4f',
     'f7':'60a631ad-6fac-44af-b098-bc7e363b0d51',
-#    'f8':'60a63218-b323-43a9-a70e-01a61eef21cc', failing update in UI
+    'f8':'60a63218-b323-43a9-a70e-01a61eef21cc', # failing update in UI
     'f9':'60a6327b-0ab8-4194-a277-8d8e2caefd9a',
     'f10':'60aff888-bfd7-4840-a977-56234b27b192',
     'f12':'60b8bdac-5faf-4aef-b12b-279b2164f23b',
